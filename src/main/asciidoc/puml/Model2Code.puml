@@ -1,0 +1,13 @@
+@startuml
+
+!include src/main/asciidoc/puml/PumlParams.puml
+
+abstract ModeleUML #pink
+abstract Code #yellow
+abstract Doc #orange
+
+Application -down-> ModeleUML
+ModeleUML ..> "génération" Code
+ModeleUML ..> "génération" Doc
+
+@enduml

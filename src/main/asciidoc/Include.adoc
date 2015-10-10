@@ -1,0 +1,13 @@
+ = Include
+ image::monImage.png[height=100]
+ video::monVideo.avi[]
+ 
+ [source,javascript]
+ ----
+ include::HelloWorld.js[lines=2..4]
+ ----
+
+ :val: cas1
+ include::test.adoc[]
+ :val: cas2
+ include::test.adoc[]

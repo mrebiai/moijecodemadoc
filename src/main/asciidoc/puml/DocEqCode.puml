@@ -1,0 +1,25 @@
+@startuml
+
+!include src/main/asciidoc/puml/PumlParams.puml
+
+abstract Code #yellow
+abstract Doc #orange
+abstract DocDansCode
+class Asciidoc #lightblue
+class PlantUml #lightblue
+interface Documentation #ADD1B2
+
+Application -down-> Code
+Source -up-|> Code
+Test -up-|> Code
+Code *- DocDansCode
+JavaDoc -up-|> DocDansCode
+Commentaire -up-|> DocDansCode
+
+Doc -|> Code
+Asciidoc -up-|> Doc
+PlantUml -up-|> Doc
+
+Code .up.> Documentation
+
+@enduml

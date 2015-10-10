@@ -1,0 +1,5 @@
+@startuml
+!include src/main/asciidoc/puml/PumlParams.puml
+:Utilisateur: --> (Evaluer ADOC)
+:Utilisateur: --> (Evaluer PUMLs)
+@enduml

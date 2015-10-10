@@ -1,0 +1,82 @@
+== PlantUML
+image::plantuml.png[float="right"]
+
+http://fr.plantuml.com
+
+Le retour du fichier plat... pour l'UML!
+
+NOTE: besoin de graphviz pour le rendu
+
+=== Le "javac"
+
+.Sans asciidoctor
+[source]
+$ java -jar plantuml.jar monfichier.puml
+
+.Avec asciidoctor (qui inclue du PlantUml)
+[source]
+$ asciidoctor -r asciidoctor-diagram monfichier.adoc
+
+NOTE: la gem asciidoctor-diagram doit être installée
+
+=== Installer Ruby? Non => Docker!
+image::docker.jpg[]
+
+[source]
+$ docker run --rm -v <VOL> asciidoctor/docker-asciidoctor <CMD>
+
+=== Réalisation d'une conception UML
+* Appli Web qui compile ADOC et PUML
+* Front AngularJS
+* Back Java - JAX-RS
+
+=== Ma conception technique
+.Code puml
+[source,PLANTUML]
+----
+include::puml/Usecase.puml[lines=1;3..-1]
+----
+
+.Inclusion dans un adoc
+[source,ASCIIDOC]
+plantuml::puml/Usecase.puml[tmp-Usecase, format="png", align="center"]
+
+plantuml::puml/Usecase.puml[tmp-Usecase, format="png", align="center"]
+
+=== Modèle de données
+[source,PLANTUML]
+----
+include::puml/Class-model.puml[tmp-Class-model, format="png", align="center"]
+----
+
+plantuml::puml/Class-model.puml[tmp-Class-model, format="png", align="center"]
+
+=== Services
+.Code puml
+[source,PLANTUML]
+----
+include::puml/Class-service.puml[lines=1;3..-1]
+----
+
+plantuml::puml/Class-service.puml[tmp-Class-service, format="png", align="center"]
+
+=== Composants
+[source,PLANTUML]
+----
+include::puml/Component.puml[lines=1;9..18;20..-1]
+----
+
+=== Composants
+plantuml::puml/Component.puml[tmp-Component, format="png", align="center"]
+
+=== Séquence
+[source,PLANTUML]
+----
+include::puml/Sequency.puml[lines=1;3..-1]
+----
+
+=== Séquence
+plantuml::puml/Sequency.puml[tmp-Sequency, format="png", align="center"]
+
+=== Et encore beaucoup plus
+http://fr.plantuml.com

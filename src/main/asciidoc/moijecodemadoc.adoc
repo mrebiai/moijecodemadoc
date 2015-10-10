@@ -1,0 +1,22 @@
+= Moi je code m'ADOC
+Mehdi Rebiai <mrebiai@sqli.com>
+v0.2, 2015.10.07
+:icons: font
+
+image::logo-sqli.png[float="left", height=100]
+image::logo-bdx-io.png[float="right" height=100]
+
+// moi + doc vs code
+include::introduction.adoc[]
+
+// presentation adoc
+include::presentation-adoc.adoc[]
+
+// presentation plantuml
+include::presentation-plantuml.adoc[]
+
+// workflow generation
+include::workflow-generation.adoc[]
+
+// fin
+include::conclusion.adoc[]

@@ -1,0 +1,60 @@
+== Asciidoc - KEZAKO?
+image::asciidoc.png[]
+
+=== Asciidoc - Définition
+* Language de balisage léger => générer des documents
+* Créé en 2002, processeur en Python
+* Géré par GitHub, GitLab, ...
+
+[cols="1a,2a", grid="none"]
+|===
+|image::github.png[align="center"]
+|image::gitlab.jpg[align="center"]
+|===
+
+=== Asciidoc - Objectifs
+*Contenu > Forme*
+
+plantuml::puml/Adoc2Output.puml[tmp-Adoc2Output, format="png"]
+
+=== Asciidoc - Vite un exemple
+[source, ASCIIDOC]
+----
+include::ViteUnExemple.adoc[]
+----
+
+=== Rendu HTML5
+image::ViteUnExemple.png[]
+
+=== Asciidoctor - KEZAKO?
+image::asciidoctor.png[]
+
+* Bye bye Python! Bonjour Ruby!
+* http://asciidoctor.org
+* v1.5.2, novembre 2014
+* Un écosystème, une communauté
+
+=== Asciidoctor - On peut...
+[source, ASCIIDOC]
+----
+include::Include.adoc[]
+----
+
++ sommaire, tableaux, diagrammes, formules, ...
+
+=== Le "javac"
+[source]
+$ asciidoctor monfichier.adoc
+
+Génération d'un fichier monfichier.html (html5 par défaut)
+
+[source]
+$ asciidoctor -D <output> -T <template> -r <requirements> monfichier.adoc
+
+NOTE: la gem asciidoctor doit être installée
+
+=== Installer Ruby? Non => Docker!
+image::docker.jpg[]
+
+[source]
+$ docker run --rm -v <VOL> asciidoctor/docker-asciidoctor <CMD>

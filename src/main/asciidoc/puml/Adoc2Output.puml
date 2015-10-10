@@ -1,0 +1,16 @@
+@startuml
+
+!include src/main/asciidoc/puml/PumlParams.puml
+
+artifact ADOC as in
+component COMPILATION as gen
+artifact PDF as pdf
+artifact HTML as html
+artifact "..." as other
+
+in -down-> gen
+gen -down-> pdf
+gen -down-> html
+gen -down-> other
+
+@enduml

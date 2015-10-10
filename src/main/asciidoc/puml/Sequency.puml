@@ -1,0 +1,18 @@
+@startuml
+!include src/main/asciidoc/puml/PumlParams.puml
+actor Utilisateur
+participant Frontend
+participant Backend
+
+Utilisateur -> Frontend : saisir adoc
+activate Frontend
+Frontend -> Backend : processAdoc
+activate Backend
+Backend -> Backend : doWork
+Backend --> Frontend : get html
+deactivate Backend
+Frontend -->Utilisateur : rendu IHM
+deactivate Frontend
+
+hide footbox
+@enduml

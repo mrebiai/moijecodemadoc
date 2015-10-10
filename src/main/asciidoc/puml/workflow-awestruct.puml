@@ -1,0 +1,29 @@
+@startuml
+!include src/main/asciidoc/puml/PumlParams.puml
+database "Git" { 
+  folder mon-wiki.git #LightBlue {
+  	artifact "test-adoc-puml.adoc" as adoc
+  }
+}
+node "{:awestruct}" <<Container>> {
+  folder mon-wiki {
+    folder source #LightBlue {
+    	artifact "test-adoc-puml.adoc" as adoc2
+    }
+    folder _html #LightGreen {
+    	artifact "test-adoc-puml.html" as html
+    }
+  }
+}
+
+note right of adoc2
+"git pull"
+régulièrement
+end note
+
+adoc2 .> adoc : (1) git pull
+adoc2 .> html : (2) génération
+
+
+
+@enduml

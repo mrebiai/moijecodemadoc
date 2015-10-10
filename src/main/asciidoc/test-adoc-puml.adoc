@@ -1,0 +1,17 @@
+= Test Adoc et Puml
+Mehdi Rebiai <mrebiai@sqli.com>
+
+== Test titre
+* Point 1
+* Point 2
+
+== Test PlantUml
+[plantuml, diagram-classes, png]     
+....
+class BdxIO
+class DevoxxFrance
+interface Conference
+
+BdxIO ..> Conference
+DevoxxFrance ..> Conference
+....

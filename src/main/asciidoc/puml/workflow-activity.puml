@@ -1,0 +1,16 @@
+@startuml
+!include src/main/asciidoc/puml/PumlParams.puml
+start
+partition "STAGE CHECKOUT" {
+ :git clone **mon-wiki.git**;
+ :git clone **mon-wiki.wiki.git**;
+}
+partition "STAGE GENERATE" {
+ :**docker run --rm** ... asciidoctor ...;
+ :update **index.adoc**;
+}
+partition "STAGE PUBLISH" {
+ :git add / commit / push dans **mon-wiki.wiki.git**;
+}
+stop
+@enduml

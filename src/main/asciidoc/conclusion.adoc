@@ -1,0 +1,20 @@
+== Une présentation... comme celle là
+* Réalisée en Asciidoc!
+* Backend reveal.js
+* Maven plugin
+* Diagrammes PlantUml
+* Poids des adoc+puml ~ *12* KO
+* https://github.com/mrebiai/moijecodemadoc
+
+== Vaincre c'est convaincre
+* Asciidoc => merci à Benoit Prioux
+* Docker => merci à Christian Chavez
+* Bdx.io => merci à Rémi Goyard
+* MERCI A VOUS !
+
+== Moi je code m'ADOC
+Questions?
+
+* https://github.com/mrebiai/moijecodemadoc
+* mrebiai@sqli.com
+* mehdi.rebiai.dev@gmail.com

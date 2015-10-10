@@ -1,0 +1,8 @@
+@startuml
+!include src/main/asciidoc/puml/PumlParams.puml
+interface Processor {
+ +String process(Code2Convert code)
+}
+interface AsciidocProcessor -up-|> Processor
+interface PlantUmlProcessor -up-|> Processor	
+@enduml

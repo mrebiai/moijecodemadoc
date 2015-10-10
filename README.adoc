@@ -1,0 +1,19 @@
+= Présentation "Moi je code m'ADOC"
+Mehdi Rebiai <mrebiai@sqli.com>
+
+== Plan de la présentation
+* Bdx.io date=2015.10.16
+* Illustration d'asciidoc, à travers l'écosystème asciidoctor
+* Illustration de PlantUml
+* Outillage
+* Workflows de génération
+
+== Compilation
+
+.Compilation du projet
+[source]
+$ mvn clean package
+
+.Génération de la présentation avec le backend RevealJS (target/slides)
+[source]
+$ mvn -PslideRevealJS

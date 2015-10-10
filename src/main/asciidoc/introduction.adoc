@@ -1,0 +1,50 @@
+== A propos de moi
+* Je suis {author}
+* Architecte technique SQLI
+* Plus de 10 ans sur Java, JavaEE, UML, ...
+* ... et maintenant JS :)
+
+== Doc?
+* README
+* Spécification
+* Conception technique
+* Manuel d'utilisation
+* Wiki
+* Rapport de stage
+* ...
+
+=== Doc vs Code ?
+plantuml::puml/DocVsCode.puml[tmp-DocVsCode, format="png"]
+
+=== Et si Doc = Code ?
+plantuml::puml/DocEqCode.puml[tmp-DocEqCode, format="png"]
+
+== Avant... je croyais au MDA
+* Formateur UML
+* Evangéliste MDA
+
+plantuml::puml/Model2Code.puml[tmp-Model2Code, format="png"]
+
+=== Maintenant... je crois au fichier plat
+image::git.jpg[]
+
+* Travail collaboratif
+* Versionable
+
+
+== Réflexion chez SQLI
+Outils sur le Poste du développeur?
+
+=== Avant
+image::windows.jpg[height="100"]
+image::eclipse.png[height="100"]
+image::msoffice.jpg[height="100"]
+image::ea.png[height="100"]
+
+=== Après
+image::ubuntu.jpg[height="100"]
+image::intelliJ.jpg[height="100"]
+image::asciidoc.png[height="100", float="left"]
+image::asciidoctor.png[height="100", float="left"]
+image::plantuml.png[height="100"]
+image::docker.jpg[height="100"]

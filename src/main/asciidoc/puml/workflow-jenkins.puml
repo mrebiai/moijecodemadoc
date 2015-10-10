@@ -1,0 +1,23 @@
+@startuml
+!include src/main/asciidoc/puml/PumlParams.puml
+database Gitlab <<Container>> { 
+  database mon-wiki.git as src #LightBlue {
+  	artifact "test-adoc-puml.adoc" as adoc
+  }
+  database mon-wiki.wiki.git as wiki #LightGreen {
+  	artifact "index.asciidoc" as index
+  }
+}
+node Jenkins <<Container>> {
+  folder job-mon-wiki-build {
+    folder workspace #LightBlue {
+    	[job **groovy**] as job
+    }
+  }
+}
+node Asciidoctor <<Container>> {
+  [asciidoctor] as gen
+}
+
+
+@enduml

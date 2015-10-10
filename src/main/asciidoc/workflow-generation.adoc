@@ -1,0 +1,64 @@
+== Workflow de génération
+
+=== Pour soi...
+* Plugins Asciidoc & PlantUml
+** IDE : Eclipse, IntelliJ, ...
+** Editeur : Atom, ...
+** Navigateur : Chrome, Firefox, ...
+** Google Doc, Office (pour PlantUml)
+
+=== Dans un projet de dev
+* Maven/Gradle avec JRuby
+** *_src/main/asciidoc_* => *_target/generated-docs_*
+** https://github.com/asciidoctor/asciidoctor-maven-examples
+** https://github.com/asciidoctor/asciidoctor-gradle-exampless
+* *asciidoctorjs* via Grunt/Gulp
+
+=== Ecrire un wiki en asciidoc...
+
+* Source sous Git!!!
+
+image::git.jpg[]
+
+* Rendu html???
+** apache? asciidoctor-confluence?
+** Droit d'accès à la doc?
+
+=== Sous Hubpress
+image::hubpress.png[]
+
+Sous Github... Blog :) Doc privée :(
+
+=== Sous {:awestruct}
+* Monde Ruby
+* Utilisation d'Asciidoctor
+* Conteneur Docker
+* Peu familiarisé avec l'outillage Ruby :(
+
+=== Test
+[source]
+----
+include::test-adoc-puml.adoc[]
+----
+
+=== Sous Gitlab
+image::test-adoc-puml-gitlab.png[]
+
+IMPORTANT: il manque Asciidoctor!
+
+=== Workflow custom
+Gitlab + Jenkins Workflow Plugin + Docker
+
+image::jenkins-docker.png[]
+
+=== Workflow custom
+plantuml::puml/workflow-jenkins.puml[tmp-workflow-jenkins, format="png", align="center"]
+
+=== Workflow custom
+plantuml::puml/workflow-activity.puml[tmp-workflow-activity, format="png", align="center"]
+
+=== Workflow custom
+image::test-adoc-puml-ok.png[]
+
+=== Workflow custom
+plantuml::puml/workflow-jenkins-fin.puml[tmp-workflow-jenkins-fin, format="png", align="center"]
