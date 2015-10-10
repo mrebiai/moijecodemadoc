@@ -1,19 +1,49 @@
 = Présentation "Moi je code m'ADOC"
 Mehdi Rebiai <mrebiai@sqli.com>
+v1.0, 16/10/2015
 
 == Plan de la présentation
-* Bdx.io date=2015.10.16
 * Illustration d'asciidoc, à travers l'écosystème asciidoctor
-* Illustration de PlantUml
-* Outillage
+* Illustration de PlantUml, à travers la conception technique d'une application webs
 * Workflows de génération
+
+== Récupération du backend revealjs
+
+[source]
+./download-backends.sh
 
 == Compilation
 
 .Compilation du projet
 [source]
-$ mvn clean package
+mvn clean package
 
 .Génération de la présentation avec le backend RevealJS (target/slides)
 [source]
-$ mvn -PslideRevealJS
+mvn -PslideRevealJS
+
+== Lancement des services
+* Pré-requis
+** docker
+** docker-compose
+
+.Lancement de gitlab et jenkins
+[source]
+docker-compose -f run-services.yml up
+
+== Configuration des services
+
+=== Gitlab
+* Créer un groupe bdxio
+* Créer un projet mon-wiki dans ce groupe
+
+=== Jenkins
+* Installer le workflow plugin
+* Créer un job de type workflow avec le fichier worklow.groovy
+
+=== Gitlab + Jenkins
+* Ajouter un utilisateur jenkins dans gitlab
+* Autoriser cet utilisateur sur le projet mon-wiki
+* Créer un credential pour cet utilisateur dans Jenkins
+
+
