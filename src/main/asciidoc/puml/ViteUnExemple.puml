@@ -1,5 +1,6 @@
 @startuml
 !include src/main/asciidoc/puml/PumlParams.puml
-:Utilisateur: --> (Evaluer ADOC)
-:Utilisateur: --> (Evaluer PUML)
+interface Conference
+Conference *- Talk
+BdxIO .> Conference
 @enduml

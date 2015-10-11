@@ -1,25 +1,19 @@
 @startuml
 !include src/main/asciidoc/puml/PumlParams.puml
-skinparam component {
-  BackgroundColor<<Route>> Gold
-  BackgroundColor<<Template>> LightGreen
-  BackgroundColor Beige
-}
-
 node "Frontend" <<Module>> {
-  [/adoc] <<Route>> as route_adoc 
-  [AdocCtrl] <<Controller>> as contr_adoc
-  [page_adoc.html] <<Template>> as templ_adoc
-  [AdocResource] <<Resource>> as res_adoc
-  
-  route_adoc ..> contr_adoc : define 
-  route_adoc ..> templ_adoc : define 
+  [/adoc] <<Route>> as route_adoc #Gold
+  [AdocCtrl] <<Controller>> as contr_adoc #orange
+  [page_adoc.html] <<Template>> as templ_adoc #LightGreen
+  [AdocResource] <<Resource>> as res_adoc #Beige
+
+  route_adoc ..> contr_adoc : define
+  route_adoc ..> templ_adoc : define
   contr_adoc ..> res_adoc : use
 }
 
 node "Backend" {
-  interface "POST adoc" as postAdoc
-  
-  res_adoc .up.> postAdoc : consume
+  interface AdocRest
+  [AdocEndPoint] - AdocRest
 }
+res_adoc .up.> AdocRest : consume
 @enduml

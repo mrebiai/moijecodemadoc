@@ -3,6 +3,7 @@
 * Architecte technique SQLI
 * Plus de 10 ans sur Java, JavaEE, UML, ...
 * ... et maintenant JS :)
+* Utilisateur Asciidoctor & PlantUML depuis 1 an
 
 == Doc?
 * README
@@ -28,20 +29,19 @@ plantuml::puml/Model2Code.puml[tmp-Model2Code, format="png"]
 === Maintenant... je crois au fichier plat
 image::git.jpg[]
 
+* Simple
 * Travail collaboratif
-* Versionable
-
 
 == Réflexion chez SQLI
 Outils sur le Poste du développeur?
 
-=== Avant
+=== Avant chez SQLI
 image::windows.jpg[height="100"]
 image::eclipse.png[height="100"]
 image::msoffice.jpg[height="100"]
 image::ea.png[height="100"]
 
-=== Après
+=== Après chez SQLI
 image::ubuntu.jpg[height="100"]
 image::intelliJ.jpg[height="100"]
 image::asciidoc.png[height="100", float="left"]

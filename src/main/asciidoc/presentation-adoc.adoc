@@ -4,12 +4,14 @@ image::asciidoc.png[]
 === Asciidoc - Définition
 * Language de balisage léger => générer des documents
 * Créé en 2002, processeur en Python
-* Géré par GitHub, GitLab, ...
+* Format géré par GitHub, GitLab, ...
+* Doc SpringFramework en asciidoc!
 
-[cols="1a,2a", grid="none"]
+[cols="1a,2a,3a", grid="none"]
 |===
-|image::github.png[align="center"]
-|image::gitlab.jpg[align="center"]
+|image::github.png[]
+|image::gitlab.jpg[height="100"]
+|image::spring.png[]
 |===
 
 === Asciidoc - Objectifs
@@ -32,6 +34,7 @@ image::asciidoctor.png[]
 * Bye bye Python! Bonjour Ruby!
 * http://asciidoctor.org
 * v1.5.2, novembre 2014
+* *Open source*
 * Un écosystème, une communauté
 
 === Asciidoctor - On peut...
@@ -58,3 +61,8 @@ image::docker.jpg[]
 
 [source]
 $ docker run --rm -v <VOL> asciidoctor/docker-asciidoctor <CMD>
+
+=== Et encore beaucoup plus
+http://asciidoctor.org
+
+IMPORTANT: Simplicité & Productivité :)
