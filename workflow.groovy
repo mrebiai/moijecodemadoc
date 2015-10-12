@@ -41,7 +41,7 @@ try {
       files = new File(pwd()).listFiles();
       for (f in files) {
         if (f.name.endsWith(".adoc")) {
-      		output+="* link:generated/"+(f.name.replaceFirst(".adoc", ".html"))+"[]\n";
+        	output+="* link:generated/"+(f.name.substring(0, f.name.length()-5))+".html[]\n";
       	}
       }
     }
