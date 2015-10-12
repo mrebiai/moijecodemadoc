@@ -7,7 +7,7 @@ partition "STAGE CHECKOUT" {
 }
 partition "STAGE GENERATE" {
  :**docker run --rm** ... asciidoctor ...;
- :update **index.adoc**;
+ :update **index.asciidoc**;
 }
 partition "STAGE PUBLISH" {
  :git add / commit / push dans **mon-wiki.wiki.git**;

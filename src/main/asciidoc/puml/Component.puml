@@ -2,18 +2,15 @@
 !include src/main/asciidoc/puml/PumlParams.puml
 node "Frontend" <<Module>> {
   [/adoc] <<Route>> as route_adoc #Gold
-  [AdocCtrl] <<Controller>> as contr_adoc #orange
-  [page_adoc.html] <<Template>> as templ_adoc #LightGreen
-  [AdocResource] <<Resource>> as res_adoc #Beige
-
+  [AdocController] <<Controller>> as contr_adoc #orange
+  [adoc.html] <<Template>> as templ_adoc #LightGreen
+ 
   route_adoc ..> contr_adoc : define
   route_adoc ..> templ_adoc : define
-  contr_adoc ..> res_adoc : use
 }
 
 node "Backend" {
-  interface AdocRest
   [AdocEndPoint] - AdocRest
 }
-res_adoc .up.> AdocRest : consume
+contr_adoc .up.> AdocRest : consume
 @enduml

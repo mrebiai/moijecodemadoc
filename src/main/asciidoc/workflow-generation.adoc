@@ -54,6 +54,8 @@ image::jenkins-docker.png[]
 === Workflow custom
 plantuml::puml/workflow-jenkins.puml[tmp-workflow-jenkins, format="png", align="center"]
 
+Droits sur *mon-wiki.wiki.git* = Droits sur *mon-wiki.git* :)
+
 === Workflow custom
 plantuml::puml/workflow-activity.puml[tmp-workflow-activity, format="png", align="center"]
 

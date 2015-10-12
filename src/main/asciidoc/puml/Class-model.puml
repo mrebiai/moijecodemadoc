@@ -1,7 +1,7 @@
 @startuml
 !include src/main/asciidoc/puml/PumlParams.puml
-class Code2Convert {
- - String imageDir
+class MyDoc {
  - String code
+ - String result
 }
 @enduml
