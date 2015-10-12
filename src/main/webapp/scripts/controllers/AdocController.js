@@ -5,7 +5,7 @@ angular.module('moijecodemadoc').controller('AdocController', function($scope, $
     $scope.code = "";
     $scope.result = "";
     
-    $scope.performSearch = function() {
+    $scope.render = function() {
     	if ($scope.code && $scope.code.length>0) {
 	        $http.post("/moijecodemadoc/rest/adoc", {code: $scope.code})
 	        	.then(function(res) {

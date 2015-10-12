@@ -5,7 +5,7 @@ angular.module('moijecodemadoc').controller('PumlController', function($scope, $
     $scope.code = "";
     $scope.result = "";
     
-    $scope.performSearch = function() {
+    $scope.render = function() {
     	if ($scope.code && $scope.code.length>0) {
 	        $http.post("/moijecodemadoc/rest/puml", {code: $scope.code})
 	        	.then(function(res) {

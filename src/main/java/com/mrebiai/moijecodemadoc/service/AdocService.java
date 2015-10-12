@@ -9,18 +9,21 @@ import org.asciidoctor.Asciidoctor;
 import org.asciidoctor.Attributes;
 import org.asciidoctor.Options;
 
-import com.mrebiai.moijecodemadoc.model.MaDoc;
+import com.mrebiai.moijecodemadoc.model.MyDoc;
 
+/**
+ * @author mrebiai
+ */
 public class AdocService implements Processor {
 	
 	private static Asciidoctor asciidoctor = Asciidoctor.Factory.create();
 	
 	/**
 	 * @throws IOException 
-	 * @see com.mrebiai.moijecodemadoc.service.Processor#process(com.mrebiai.moijecodemadoc.model.MaDoc)
+	 * @see com.mrebiai.moijecodemadoc.service.Processor#process(com.mrebiai.moijecodemadoc.model.MyDoc)
 	 */
 	@Override
-	public MaDoc process(MaDoc madoc) throws IOException {
+	public MyDoc process(MyDoc madoc) throws IOException {
 		Attributes attributes = new Attributes();
 		attributes.setBackend("html5");
 

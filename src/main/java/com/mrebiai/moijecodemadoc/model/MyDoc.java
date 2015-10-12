@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author mrebiai
  */
 @XmlRootElement
-public class MaDoc implements Serializable {
+public class MyDoc implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	

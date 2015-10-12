@@ -2,7 +2,7 @@ package com.mrebiai.moijecodemadoc.service;
 
 import java.io.IOException;
 
-import com.mrebiai.moijecodemadoc.model.MaDoc;
+import com.mrebiai.moijecodemadoc.model.MyDoc;
 
 /**
  * @author mrebiai
@@ -14,6 +14,6 @@ public interface Processor {
 	 * @return processing
 	 * @throws IOException 
 	 */
-	MaDoc process(MaDoc madoc) throws IOException;
+	MyDoc process(MyDoc madoc) throws IOException;
 	
 }

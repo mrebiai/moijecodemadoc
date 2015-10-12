@@ -10,7 +10,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.mrebiai.moijecodemadoc.model.MaDoc;
+import com.mrebiai.moijecodemadoc.model.MyDoc;
 import com.mrebiai.moijecodemadoc.service.AdocService;
 
 /**
@@ -25,8 +25,8 @@ public class AdocEndpoint {
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response create(MaDoc entity) throws IOException {
-		MaDoc result = adocService.process(entity);
+	public Response create(MyDoc entity) throws IOException {
+		MyDoc result = adocService.process(entity);
 		return Response.ok(result).build();
 	}
 }

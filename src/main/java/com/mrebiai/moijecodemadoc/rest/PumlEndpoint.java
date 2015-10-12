@@ -10,7 +10,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.mrebiai.moijecodemadoc.model.MaDoc;
+import com.mrebiai.moijecodemadoc.model.MyDoc;
 import com.mrebiai.moijecodemadoc.service.AdocService;
 import com.mrebiai.moijecodemadoc.service.PumlService;
 
@@ -26,8 +26,8 @@ public class PumlEndpoint {
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response create(MaDoc entity) throws IOException {
-		MaDoc result = pumlService.process(entity);
+	public Response create(MyDoc entity) throws IOException {
+		MyDoc result = pumlService.process(entity);
 		return Response.ok(result).build();
 	}
 }
