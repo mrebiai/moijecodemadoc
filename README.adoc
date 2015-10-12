@@ -53,4 +53,8 @@ docker-compose -f run-services.yml up
 * Autoriser cet utilisateur sur le projet mon-wiki
 * Créer un credential pour cet utilisateur dans Jenkins
 
+=== Machine hôte
+* Tous les montages se font sous /srv
+* L'utilisateur jenkins du conteneur Jenkins doit avoir un accès en RW au fichier /var/run/docker.sock de la machine hôte.
+
 
