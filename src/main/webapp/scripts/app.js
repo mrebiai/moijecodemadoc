@@ -1,10 +1,11 @@
 'use strict';
 
-angular.module('moijecodemadoc',['ngRoute','ngResource'])
+angular.module('moijecodemadoc',['ngRoute','ngResource', 'ngSanitize'])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
       .when('/',{templateUrl:'views/landing.html',controller:'LandingPageController'})
-      .when('/MaDocs',{templateUrl:'views/MaDoc/search.html',controller:'SearchMaDocController'})
+      .when('/adoc',{templateUrl:'views/adoc.html',controller:'AdocController'})
+      .when('/puml',{templateUrl:'views/puml.html',controller:'PumlController'})
       .otherwise({
         redirectTo: '/'
       });

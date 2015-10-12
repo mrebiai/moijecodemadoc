@@ -34,6 +34,7 @@ public class AsciidoctorJTest {
 		
 		Attributes attributes = new Attributes();
 		attributes.setBackend("html5");
+		attributes.setShowTitle(true);
 
 		Options options = new Options();
 		options.setAttributes(attributes);

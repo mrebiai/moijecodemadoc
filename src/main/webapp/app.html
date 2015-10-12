@@ -7,6 +7,7 @@
     <link href="styles/bootstrap.css" rel="stylesheet" media="screen">
     <link href="styles/bootstrap-theme.css" rel="stylesheet" media="screen">
     <link href="styles/main.css" rel="stylesheet" media="screen">
+    <link href="styles/asciidoctor-default.css" rel="stylesheet" media="screen">
 </head>
 <body>
     <div id="wrap">
@@ -34,7 +35,8 @@
                     </a>
                     <nav class="sidebar-nav" ng-controller="NavController" role="navigation">
                         <div id="sidebar-entries" class="list-group">
-                        	<a class="list-group-item" ng-class="{active: matchesRoute('MaDocs')}" href="#/MaDocs" data-toggle="offcanvas">MaDocs</a>
+                        	<a class="list-group-item" ng-class="{active: matchesRoute('adoc')}" href="#/adoc" data-toggle="offcanvas">adoc</a>
+                        	<a class="list-group-item" ng-class="{active: matchesRoute('puml')}" href="#/puml" data-toggle="offcanvas">puml</a>
                         </div>
                     </nav>
                 </div>
@@ -64,6 +66,7 @@
     <script src="scripts/vendor/angular.js"></script>
     <script src="scripts/vendor/angular-route.js"></script>
     <script src="scripts/vendor/angular-resource.js"></script>
+    <script src="scripts/vendor/angular-sanitize.js"></script>
     <script src="scripts/app.js"></script>
     <script src="scripts/offcanvas.js"></script>
     <script src="scripts/directives/datepicker.js"></script>
@@ -75,8 +78,7 @@
     <script src="scripts/services/locationParser.js"></script>
     <script src="scripts/controllers/flashController.js"></script>
     <script src="scripts/services/MaDocFactory.js"></script>
-    <script src="scripts/controllers/newMaDocController.js"></script>
-    <script src="scripts/controllers/searchMaDocController.js"></script>
-    <script src="scripts/controllers/editMaDocController.js"></script>
+    <script src="scripts/controllers/AdocController.js"></script>
+    <script src="scripts/controllers/PumlController.js"></script>
 </body>
 </html>
