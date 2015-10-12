@@ -11,7 +11,9 @@ public class MyDoc implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
+	
 	private String code;
+	
 	private String result;
 
 	public String getCode() {
@@ -21,7 +23,7 @@ public class MyDoc implements Serializable {
 	public void setCode(String code) {
 		this.code = code;
 	}
-
+	
 	public String getResult() {
 		return result;
 	}
