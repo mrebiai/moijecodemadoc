@@ -53,7 +53,7 @@ try {
   stage name:'PUBLISH';
   node {
     dir(PROJECT_NAME+".wiki") {  
-      sh "git add -A .";
+      sh "git add .";
       sh "git commit -m 'commit generated doc'";
       sh "git push -u origin master";
     }
