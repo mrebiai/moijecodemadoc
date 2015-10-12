@@ -12,6 +12,8 @@ Moi je code ma doc avec Asciidoctor et PlantUML. Retrouvons des fichiers plats, 
 . Illustration de PlantUml, à travers la conception technique d'une application web
 . Workflows de génération
 
+NOTE: l'application web a été implémentée à partir d'une génération JBossForge, puis déployée sous JBoss EAP 6.4.
+
 == Récupération du backend revealjs
 [source]
 ----
@@ -19,9 +21,9 @@ Moi je code ma doc avec Asciidoctor et PlantUML. Retrouvons des fichiers plats, 
 ----
 
 == Compilation
-.Compilation du projet
+.Compilation du projet + tests
 [source]
-mvn clean package
+mvn clean verify
 
 .Génération de la présentation avec le backend RevealJS (target/slides)
 [source]
