@@ -49,6 +49,11 @@ try {
       def fOutput = new File(pwd()+"/index.asciidoc");
       fOutput.write(output); 
     }
+    // copies du dossier images
+    def imageDir = pwd()+"/"+PROJECT_NAME+"/images";
+    if (new File(imageDir).exists()) {
+    	sh "cp -r "+PROJECT_NAME+"/images " + PROJECT_NAME+".wiki/generated/images";
+    }
   }
   stage name:'PUBLISH';
   node {
