@@ -29,6 +29,13 @@ try {
   }
   stage name:'GENERATE';
   node {
+    // clean generated
+    dir(PROJECT_NAME+".wiki") {
+      if (new File(pwd()+"/generated").exists()) {
+    	sh "rm -rf generated";
+      }
+    }
+  
     // génération
     def cmd1 = 'asciidoctor -r asciidoctor-diagram '+PROJECT_NAME+'/*.adoc -D ' + PROJECT_NAME+'.wiki/generated';
     // mise à jour des droits pour pouvoir vider le workspace en fin de job
