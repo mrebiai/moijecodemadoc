@@ -11,12 +11,12 @@
 * Maven/Gradle avec JRuby
 ** *_src/main/asciidoc_* => *_target/generated-docs_*
 ** https://github.com/asciidoctor/asciidoctor-maven-examples
-** https://github.com/asciidoctor/asciidoctor-gradle-exampless
+** https://github.com/asciidoctor/asciidoctor-gradle-examples
 * *asciidoctorjs* via Grunt/Gulp
 
 === Ecrire un wiki en asciidoc...
 
-* Source sous Git!!!
+* Sources sous Git!!!
 
 image::git.jpg[]
 

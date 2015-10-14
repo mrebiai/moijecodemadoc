@@ -37,7 +37,10 @@ image::docker.jpg[]
 $ docker run --rm -v <VOL> asciidoctor/docker-asciidoctor <CMD>
 
 === Réalisation d'une conception UML
-* Appli Web - "live rendering" ADOC & PUML
+Appli Web - "live rendering" ADOC & PUML
+
+plantuml::puml/ihm.puml[tmp-ihm, format="svg", align="center", height="200"]
+
 * Front AngularJS
 * Back Java - JAX-RS
 

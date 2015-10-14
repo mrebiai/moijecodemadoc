@@ -1,0 +1,11 @@
+@startuml
+salt
+{+
+{/ <b>adoc | puml }
+{
+	Code | "Texte en *adoc*"
+	[Render]
+	Result| "Texte en **adoc**" 
+}
+}
+@enduml
